@@ -16,6 +16,12 @@ function App() {
         return val
       })
     )
+
+    if (player == "X") {
+      setPlayer("O")
+    } else {
+      setPlayer("X")
+    }
   }
 
   return (
