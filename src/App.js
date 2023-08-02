@@ -10,10 +10,16 @@ function App() {
 
   useEffect(() => {
     checkWin()
+
+    if (player == "x") {
+      setPlayer("O")
+    } else {
+      setPlayer("X")
+    }
   }, [board])
 
   useEffect(() => {
-    if (result.state === "none") {
+    if (result.state !== "none") {
       alert(`Game Finished! Wining Player: ${result.winner}`)
     }
   })
@@ -27,12 +33,6 @@ function App() {
         return val
       })
     )
-
-    if (player == "X") {
-      setPlayer("O")
-    } else {
-      setPlayer("X")
-    }
   }
 
   const checkWin = () => {
