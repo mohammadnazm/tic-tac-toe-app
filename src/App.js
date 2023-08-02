@@ -23,7 +23,8 @@ function App() {
     if (result.state !== "none") {
       alert(`Game Finished! Wining Player: ${result.winner}`)
     }
-  })
+    restartGame()
+  }, [result])
 
   const chooseSquare = square => {
     setBoard(
@@ -63,6 +64,11 @@ function App() {
     if (filled) {
       setResult({ winner: "No One", state: "Tie" })
     }
+  }
+
+  const restartGame = () => {
+    setBoard(["", "", "", "", "", "", "", "", ""])
+    setPlayer("O")
   }
 
   return (
