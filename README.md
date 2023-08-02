@@ -2,7 +2,7 @@
 
 Tic Tac Toe Game is a classic two-player board game where the objective is to form a line of three matching symbols (X or O) on a 3x3 grid. It is a simple yet strategic game that has been enjoyed by people of all ages for generations.
 
-![Uploading ezgif.com-gif-maker (11).gif…]()
+![ezgif com-gif-maker (11)](https://github.com/mohammadnazm/tic-tac-toe-app/assets/63538356/dda7365f-227e-4203-b85a-adf20a48c38a)
 
 
 ## Features
