@@ -13,7 +13,6 @@ function App() {
         if (idx == square) {
           return player
         }
-
         return val
       })
     )
