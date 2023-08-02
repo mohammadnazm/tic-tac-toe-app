@@ -26,3 +26,12 @@ body {
   flex-direction: row;
   border: 1px solid black;
 }
+
+.square {
+  flex: 30%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}

@@ -8,7 +8,26 @@ function App() {
   return (
     <div className="App">
       <div className="board">
-        <div className="row"></div>
+        <div className="row">
+          <Square
+            val={board[0]}
+            chooseSquare={() => {
+              alert(0)
+            }}
+          />
+          <Square
+            val={board[1]}
+            chooseSquare={() => {
+              alert(1)
+            }}
+          />
+          <Square
+            val={board[2]}
+            chooseSquare={() => {
+              alert(2)
+            }}
+          />
+        </div>
         <div className="row"></div>
         <div className="row"></div>
       </div>
