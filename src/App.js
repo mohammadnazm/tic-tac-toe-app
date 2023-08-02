@@ -12,6 +12,12 @@ function App() {
     checkWin()
   }, [board])
 
+  useEffect(() => {
+    if (result.state === "none") {
+      alert(`Game Finished! Wining Player: ${result.winner}`)
+    }
+  })
+
   const chooseSquare = square => {
     setBoard(
       board.map((val, idx) => {
