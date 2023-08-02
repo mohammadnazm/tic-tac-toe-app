@@ -6,6 +6,7 @@ function App() {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""])
   const [player, setPlayer] = useState("X")
 
+  console.log(board)
   const chooseSquare = square => {
     setBoard(
       board.map((val, idx) => {
