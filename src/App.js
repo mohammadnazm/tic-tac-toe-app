@@ -10,8 +10,9 @@ function App() {
 
   useEffect(() => {
     checkWin()
+    checkIfTie()
 
-    if (player === "x") {
+    if (player == "X") {
       setPlayer("O")
     } else {
       setPlayer("X")
