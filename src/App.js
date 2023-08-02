@@ -4,6 +4,19 @@ import Square from "./components/Square"
 
 function App() {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""])
+  const [player, setPlayer] = useState("X")
+
+  const chooseSquare = square => {
+    setBoard(
+      board.map((val, idx) => {
+        if (idx == square) {
+          return player
+        }
+
+        return val
+      })
+    )
+  }
 
   return (
     <div className="App">
@@ -12,19 +25,19 @@ function App() {
           <Square
             val={board[0]}
             chooseSquare={() => {
-              alert(0)
+              chooseSquare(0)
             }}
           />
           <Square
             val={board[1]}
             chooseSquare={() => {
-              alert(1)
+              chooseSquare(1)
             }}
           />
           <Square
             val={board[2]}
             chooseSquare={() => {
-              alert(2)
+              chooseSquare(2)
             }}
           />
         </div>
